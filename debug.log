@@ -1,0 +1,63 @@
+INFO 2023-10-18 06:01:43,279 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-18 06:01:58,212 log Not Found: /check_login/
+INFO 2023-10-18 06:03:14,614 autoreload /Users/nkushekenov/homework16/homework16/urls.py changed, reloading.
+INFO 2023-10-18 06:03:15,110 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-18 06:03:17,198 log Not Found: /
+ERROR 2023-10-18 06:03:36,437 log Internal Server Error: /check_login/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nkushekenov/homework16/HW16/views.py", line 8, in check_login
+    return redirect('another_page')
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'another_page' not found. 'another_page' is not a valid view function or pattern name.
+ERROR 2023-10-18 06:04:04,726 log Internal Server Error: /check_login/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nkushekenov/homework16/HW16/views.py", line 8, in check_login
+    return redirect('another_page')
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'another_page' not found. 'another_page' is not a valid view function or pattern name.
+INFO 2023-10-18 06:07:32,638 autoreload /Users/nkushekenov/homework16/HW16/urls.py changed, reloading.
+INFO 2023-10-18 06:07:33,170 autoreload Watching for file changes with StatReloader
+INFO 2023-10-18 06:07:36,268 autoreload /Users/nkushekenov/homework16/HW16/views.py changed, reloading.
+INFO 2023-10-18 06:07:36,771 autoreload Watching for file changes with StatReloader
+INFO 2023-10-18 06:07:57,076 autoreload /Users/nkushekenov/homework16/HW16/views.py changed, reloading.
+INFO 2023-10-18 06:07:57,662 autoreload Watching for file changes with StatReloader
+WARNING 2023-10-18 06:08:19,304 log Not Found: /
+INFO 2023-10-18 06:18:42,042 autoreload /Users/nkushekenov/homework16/HW16/views.py changed, reloading.
+INFO 2023-10-18 06:18:42,482 autoreload Watching for file changes with StatReloader
+INFO 2023-10-18 06:19:07,886 autoreload /Users/nkushekenov/homework16/HW16/urls.py changed, reloading.
+INFO 2023-10-18 06:19:08,329 autoreload Watching for file changes with StatReloader
+INFO 2023-10-18 06:19:46,185 views <WSGIRequest: GET '/log_request_data/'>
